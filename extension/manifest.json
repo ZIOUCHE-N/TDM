@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "TDM — Pont de téléchargement",
+  "version": "0.1.0",
+  "description": "Envoie explicitement un lien à TDM (Téléchargement Download Manager) sur votre machine.",
+  "permissions": ["contextMenus", "storage", "notifications", "activeTab"],
+  "host_permissions": ["http://127.0.0.1/*"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_title": "TDM",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/16.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "128": "icons/128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/16.png",
+    "32": "icons/32.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  }
+}

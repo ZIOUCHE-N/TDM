@@ -1,0 +1,6 @@
+
+# Fichiers locaux et secrets
+keyssh
+keyssh.pub
+node_modules/
+dist/
