@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TDM — Pont de téléchargement</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header class="head">
+      <img src="icons/48.png" width="30" height="30" alt="" />
+      <div>
+        <strong>TDM</strong>
+        <span>Pont de téléchargement</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel">
+        <label>
+          <span>Port local</span>
+          <input id="port" type="number" min="1024" max="65535" value="47831" />
+        </label>
+        <label>
+          <span>Jeton d’appairage</span>
+          <input id="token" type="password" autocomplete="off" spellcheck="false" placeholder="Coller le jeton TDM" />
+        </label>
+        <div class="row">
+          <button id="save" class="primary" type="button">Enregistrer</button>
+          <button id="test" type="button">Tester</button>
+        </div>
+        <p id="status" class="status" role="status"></p>
+      </section>
+
+      <section class="panel">
+        <button id="download-page" class="wide" type="button">Télécharger la page active avec TDM</button>
+        <p class="hint">
+          Le jeton se trouve dans TDM → Paramètres → Navigateur. Aucune page n’est lue ni modifiée : seul le lien que
+          vous envoyez est transmis à TDM sur 127.0.0.1.
+        </p>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
